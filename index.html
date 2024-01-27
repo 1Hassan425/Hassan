@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet">
+  <style>
+    body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1A1A2E;
+}
+
+#container {
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: #1A1A2E;
+}
+
+.left-bar {
+    flex: 2;
+    background-color: #1A1A2E;
+}
+
+header {
+    background-color: #1A1A2E;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 35.8%;
+    margin: 0 auto;
+    color: goldenrod;
+    border-bottom: 2px solid;
+}
+
+aside {
+    flex: 2;
+    background-color: #1A1A2E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f03c57;
+    position: relative;
+}
+
+aside::after {
+    content: "";
+    position: absolute;
+    margin-top: 50px;
+    right: 0;
+    height: 800px;
+    width: 1px;
+    background-color: aqua;
+}
+
+.main {
+    flex: 5;
+    background-color: #1A1A2E;
+    padding-right: 20px; 
+    padding-left: 20px; 
+}
+
+#profile {
+    width: 250px; 
+    height: 250px; 
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px 0;
+    margin-top: 100px;
+}
+
+.right-bar {
+    flex: 2;
+    background-color: #1A1A2E;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: gold;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav a:hover,
+.active {
+    background-color: none;
+    color: greenyellow;
+}
+
+section {
+    color: lightblue;
+}
+
+.textposition {
+    position: relative;
+    left: 20px; 
+    top: 50px;
+}
+
+.large {
+    text-size-adjust: 20;
+}
+
+.experience-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.left-column, .right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    line-height: 0.9; 
+}
+
+.job-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color:#f03c57
+}
+
+.company {
+    font-size: 18px;
+    color: lightblue;
+}
+
+.date, .institution {
+    font-size: 16px;
+    color: lightblue;
+}
+
+.progress-bars {
+    font-family: Arial, sans-serif;
+    background-color: #1A1A2E;
+    display: flex;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.progress-container {
+    text-align: left;
+    margin-left: 10px; 
+}
+
+.progress-bar-container {
+    background-color: #292929;
+    border-radius: 20px; 
+    width: 700px; 
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 40px;
+    box-sizing: border-box; 
+}
+
+.progress-bar {
+    height: 20px;
+    background-color:#f03c57;
+    border-radius: 20px;
+    width: 0;
+}
+
+.progress-title {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: lightblue;
+}
+
+ul {
+    list-style-type: disc; 
+    margin: 0; 
+    margin-left: 40px;
+    padding: 0; 
+}
+
+li {
+    margin-bottom: 10px; 
+}
+
+#link {
+    color:#f03c57;
+}
+
+.margin15 {
+    margin-left: 15px;
+}
+
+@media (max-width: 800px) {
+    .left-bar, .right-bar {
+        display: none;
+    }
+
+    #container {
+        flex-direction: column;
+    }
+
+    aside {
+        flex: 1;
+        width: 100%;
+    }
+
+    .main {
+        flex: 1;
+        padding: 10px; 
+    }
+
+    aside::after {
+        position: relative;
+        margin-top: 20px; 
+        width: 60%;
+        height: 2px;
+        background-color: aqua;
+        display: block;
+    }
+
+    .progress-bar-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 550%; 
+    }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="active">About</a>
+
+  
+  </header>
+
+  <div id="container">
+    <section class="left-bar"></section>
+
+    <aside>
+      <img id="profile" src="my-img.jpg" alt="Hassan">
+      <h2>Hassan Abdullah</h2>
+      <p>Student, Mount Royal University</p>
+      <p>habdu239@mtroyal.ca</p>
+    </aside>
+
+    <section class="main">
+      <br>
+      <h2 class="textposition">Hi, I'm Hassan</h2>
+      <p class="textposition">
+        I am a student at Mount Royal University, majoring in Information Design with a minor in Computer Information Systems. I like to approach problems by balancing creativity and logical thinking to approach complex challenges from multiple angles. My coursework explores the intersection of design and technology, allowing me to develop a unique skill set.
+        <br>
+        <br>
+        I am passionate about applying my knowledge in practical settings through projects to contribute innovative solutions to the evolving digital landscape. My goal is to seamlessly integrate design and technology, ensuring effective communication and functional robustness.
+        <br>
+        <br>      
+
+      </p>
+      <p class="textposition" style="color:#f03c57;">
+        Enough of the boring stuff. A bit about me:
+
+        <br> 
+        <br>
+        <div class="textposition" color="aqua">
+            
+            <li>Aspring table tennis player</li>
+            <li>Former painter in the Bob Ross style </li>
+            <li>Former origami and paper craft pro </li>
+            <li>Proud android user (no iMessage unfortunately)</li>
+
+
+
+        </div>
+        
+        </p>
+
+    </section>
+
+    <section class="right-bar"></section>
+  </div>
+
+</body>
+</html>
